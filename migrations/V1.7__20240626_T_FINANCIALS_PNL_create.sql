@@ -1,12 +1,12 @@
 USE SCHEMA STG_DEMO ; 
 CREATE OR REPLACE TABLE T_FINANCIALS_PNL (
     COUNTRY_CODE varchar(150) NOT NULL PRIMARY KEY COMMENT 'Country code ',
-    CALENDAR_MONTH integer NOT NULL PRIMARY KEY COMMENT 'Month associated with sell in',
-    SKU_CODE varchar(150) NOT NULL PRIMARY KEY COMMENT 'RB SKU Code',
-    RETAILER_ID varchar(150) NOT NULL PRIMARY KEY COMMENT 'Retailer ID',
-    CHANNEL_ID varchar(150) NOT NULL PRIMARY KEY COMMENT 'ID of the Web, Store or Delivery- a place where the item was sold or the mechanism',
-    BUSINESS_UNIT_ID varchar(150) NOT NULL PRIMARY KEY COMMENT 'Business Unit description',
-    CATEGORY_ID varchar(150) NOT NULL PRIMARY KEY COMMENT 'Category description',
+    CALENDAR_MONTH integer NOT NULL  COMMENT 'Month associated with sell in',
+    SKU_CODE varchar(150) NOT NULL  COMMENT 'RB SKU Code',
+    RETAILER_ID varchar(150) NOT NULL  COMMENT 'Retailer ID',
+    CHANNEL_ID varchar(150) NOT NULL  COMMENT 'ID of the Web, Store or Delivery- a place where the item was sold or the mechanism',
+    BUSINESS_UNIT_ID varchar(150) NOT NULL  COMMENT 'Business Unit description',
+    CATEGORY_ID varchar(150) NOT NULL COMMENT 'Category description',
     NON_PROMO_TRADE_INVESTMENT decimal(22,4) COMMENT 'NON_PROMO_TRADE_INVESTMENT',
     YEAR integer NOT NULL COMMENT 'Custom Metric ID NAME as required for Channel-Category',
     SKU_DESCRIPTION varchar(150) COMMENT 'Custom Metric ID Value as required for Channel-Category',
