@@ -1,4 +1,4 @@
-USE DATABASE {{ database }} ; 
+USE DATABASE DEMO_DB ; 
 USE SCHEMA PSA_EXT_FACTS ; 
 
 
